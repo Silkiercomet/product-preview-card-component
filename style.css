@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    position: relative;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    place-items: center;
+
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p, span{
+    color: hsl(228, 12%, 48%);
+  }
+  h1 {
+    color :hsl(212, 21%, 14%);
+  }
+  h1, .card__info_price{
+    font-family: 'Fraunces', serif;
+  }
+
+.card{
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.card__image{
+    min-height: 200px;
+    width: 100%;
+
+    background-image: url(./images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.card__info{
+    padding: 20px;
+}
+
+.card__info_category{
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+.card__info_price{
+    display: flex;
+    margin: 15px 0;
+
+}
+.card__info_price span:nth-child(1){
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+}
+.card__info_price span:nth-child(2){
+    margin: auto 12px;
+    align-self: center;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+.card__info h1{
+    font-size: 35px;
+    line-height: 1;
+    margin: 15px 0;
+}
+.card__info button{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    cursor: pointer;
+}
+

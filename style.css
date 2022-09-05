@@ -34,6 +34,7 @@ body {
   place-items: center;
 
   background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
 }
 
 /*
@@ -73,15 +74,18 @@ h1,
   max-width: 380px;
   display: flex;
   flex-direction: column;
-
+  
+  margin: 20px 0;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: visible;
   background-color: white;
 }
 .card__image {
   min-height: 230px;
   width: 100%;
 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-image: url(./images/image-product-mobile.jpg);
   background-position: center;
   background-size: cover;
@@ -136,6 +140,7 @@ h1,
   .card {
     max-width: 650px;
     flex-direction: row;
+    overflow: hidden;
   }
   .card > * {
     flex: 1;
@@ -143,7 +148,7 @@ h1,
   .card__image {
     min-height: auto;
     width: 100%;
-
+    border-top-right-radius: 0px;
     background-image: url(./images/image-product-desktop.jpg);
     background-position: center;
     background-size: cover;
